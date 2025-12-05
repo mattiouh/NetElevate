@@ -1,146 +1,82 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetElevate — Agenzia Digitale</title>
+    <title>NetElevate - Agenzia Digitale Futuristica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cursor-spotlight" aria-hidden="true"></div>
+    <div class="noise-layer" aria-hidden="true"></div>
+    <div class="grid-lines" aria-hidden="true"></div>
 
     <header class="nav">
         <div class="container nav__inner">
             <div class="nav__logo">
-                <span class="nav__mark" aria-hidden="true">
-                    <span class="mark__line"></span>
-                    <span class="mark__line"></span>
-                    <span class="mark__line"></span>
-                </span>
-                <span class="nav__word">NetElevate</span>
+                <span class="logo-mark"></span>
+                <span class="logo-word">NetElevate</span>
+                <span class="logo-sub">Agent v3.0</span>
             </div>
             <nav class="nav__links">
-                <a href="#portfolio" class="nav__link">Lavori</a>
                 <a href="#services" class="nav__link">Servizi</a>
                 <a href="#about" class="nav__link">Studio</a>
-                <a href="#contact" class="nav__link">Contatti</a>
+                <a href="#process" class="nav__link">Processo</a>
+                <a href="#gallery" class="nav__link">Gallery</a>
+                <a href="#reviews" class="nav__link">Proof</a>
             </nav>
-            <button class="nav__burger" aria-label="Apri menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-        <div class="nav__overlay">
-            <div class="nav__overlay-content">
-                <a href="#portfolio" class="overlay__link">Lavori</a>
-                <a href="#services" class="overlay__link">Servizi</a>
-                <a href="#about" class="overlay__link">Studio</a>
-                <a href="#contact" class="overlay__link">Contatti</a>
-            </div>
+            <a href="#cta" class="btn btn--ghost nav__cta">Prenota una call</a>
         </div>
     </header>
 
     <main>
         <section class="hero" id="top">
-            <video class="hero__video" src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" autoplay muted loop playsinline></video>
-            <div class="hero__overlay hero__overlay--gradient"></div>
-            <div class="hero__overlay hero__overlay--vignette"></div>
-            <div class="container hero__content">
-                <p class="hero__label reveal">Agenzia digitale — Italia</p>
-                <h1 class="hero__title reveal" data-parallax data-split>Eleviamo il tuo mondo digitale.</h1>
-                <p class="hero__subtitle reveal">Design, sviluppo Webflow e sistemi di automazione che generano impatto reale.</p>
-                <div class="hero__cta reveal">
-                    <a href="#contact" class="btn btn--outline cta-link">Prenota una chiamata strategica gratuita</a>
+            <div class="macro-title" aria-hidden="true">STRATEGIA</div>
+            <div class="orb orb--left"></div>
+            <div class="orb orb--right"></div>
+            <div class="container hero__grid">
+                <div class="hero__intro">
+                    <p class="eyebrow reveal">Acceleratori digitali per brand ad alta velocita</p>
+                    <h1 class="hero__title reveal">Costruiamo brand, siti e sistemi che convertono sul serio.</h1>
+                    <p class="hero__subtitle reveal">Strategia netta, design leggibile, workflow AI che eliminano attrito e spingono le metriche in poche settimane.</p>
+                    <div class="hero__actions reveal">
+                        <a href="#cta" class="btn btn--primary">Richiedi una call strategica</a>
+                        <a href="#services" class="btn btn--outline">Scopri i servizi</a>
+                    </div>
+                    <div class="hero__meta reveal">
+                        <div class="meta-badge">Executive delivery</div>
+                        <div class="meta-line">
+                            <span>Settori</span>
+                            <strong>SaaS, AI, Educazione, Moda, Servizi</strong>
+                        </div>
+                        <div class="meta-line">
+                            <span>Output</span>
+                            <strong>Brand, siti Web, prodotti digitali, sistemi automatizzati</strong>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section services" id="services">
-            <div class="container">
-                <div class="section__head reveal">
-                    <p class="eyebrow">Cosa facciamo</p>
-                    <h2 data-split>Soluzioni essenziali, estetica netta, performance misurabili.</h2>
-                </div>
-                <div class="services__grid">
-                    <article class="service reveal">
-                        <div class="service__icon" aria-hidden="true">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M10 18h44v28H10z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 26h32M20 38h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                <div class="hero__panel reveal">
+                    <div class="panel__header">
+                        <span class="dot dot--green"></span>
+                        <span class="dot dot--gray"></span>
+                        <span class="dot dot--gray"></span>
+                    </div>
+                    <div class="panel__body">
+                        <p class="panel__label">Command Center</p>
+                        <h3>Setup completo in 72 ore</h3>
+                        <p class="panel__copy">Allineiamo brand, architettura e contenuti. Sprint corti, feedback rapidi, rilascio continuo.</p>
+                        <ul class="panel__list">
+                            <li><span class="pulse"></span> Sistema visivo completo e modulare</li>
+                            <li><span class="pulse"></span> Sito Web pronto a convertire</li>
+                            <li><span class="pulse"></span> Pipelines AI per contenuti e operativita</li>
+                        </ul>
+                        <div class="panel__footer">
+                            <span class="chip">Disponibilita limitata</span>
+                            <a class="link" href="#reviews">Case study reali</a>
                         </div>
-                        <div class="service__body">
-                            <h3>Design & Esperienza Digitale</h3>
-                            <p>Creiamo identità visive e interfacce che trasformano la percezione del tuo brand.</p>
-                        </div>
-                    </article>
-                    <article class="service reveal">
-                        <div class="service__icon" aria-hidden="true">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M12 18h40v28H12z" stroke="currentColor" stroke-width="2.2"/><path d="M18 24h12v16H18zM34 24h12v10H34z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
-                        </div>
-                        <div class="service__body">
-                            <h3>Sviluppo Webflow Avanzato</h3>
-                            <p>Costruiamo siti moderni, fluidi, modulari e facilmente gestibili.</p>
-                        </div>
-                    </article>
-                    <article class="service reveal">
-                        <div class="service__icon" aria-hidden="true">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M18 18h28v28H18z" stroke="currentColor" stroke-width="2.2"/><path d="M32 10v8M32 46v8M10 32h8M46 32h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                        </div>
-                        <div class="service__body">
-                            <h3>Automazioni & Sistemi AI</h3>
-                            <p>Ottimizziamo processi e flussi di lavoro con soluzioni intelligenti e personalizzate.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section showreel" id="showreel">
-            <div class="container showreel__intro reveal">
-                <p class="eyebrow">Showreel</p>
-                <h2 data-split>Progetti guidati dall’estetica e dalla performance.</h2>
-            </div>
-            <div class="showreel__track" data-scroll-track>
-                <div class="showreel__item"><img src="https://images.unsplash.com/photo-1522199873715-1e893a0173e6?auto=format&fit=crop&w=1600&q=80" loading="lazy" alt="Workspace minimale"></div>
-                <div class="showreel__item"><img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1600&q=80" loading="lazy" alt="Architettura moderna luce morbida"></div>
-                <div class="showreel__item"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80" loading="lazy" alt="Luci astratte premium"></div>
-            </div>
-        </section>
-
-        <section class="section portfolio" id="portfolio">
-            <div class="container">
-                <div class="section__head reveal">
-                    <p class="eyebrow">Lavori</p>
-                    <h2 data-split>Mosaico selezionato.</h2>
-                </div>
-                <div class="portfolio__grid">
-                    <article class="project project--wide reveal">
-                        <div class="project__media">
-                            <img src="https://images.unsplash.com/photo-1522199873715-1e893a0173e6?auto=format&fit=crop&w=1600&q=80&sat=-15" loading="lazy" alt="Aurora Studio">
-                            <div class="project__overlay">
-                                <div class="project__tagline">Identità · Webflow</div>
-                                <h3>Aurora Studio – Identità & Webflow</h3>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project reveal">
-                        <div class="project__media">
-                            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1600&q=80&sat=-15" loading="lazy" alt="Linea Nord">
-                            <div class="project__overlay">
-                                <div class="project__tagline">AI · SaaS</div>
-                                <h3>Linea Nord – Piattaforma AI per aziende</h3>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project reveal">
-                        <div class="project__media">
-                            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80&sat=-15" loading="lazy" alt="Vanta Retail">
-                            <div class="project__overlay">
-                                <div class="project__tagline">Retail · Esperienza</div>
-                                <h3>Vanta – Esperienza retail digitale</h3>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -149,73 +85,232 @@
             <div class="container about__grid">
                 <div class="about__text reveal">
                     <p class="eyebrow">Studio</p>
-                    <h2 data-split>Siamo un piccolo studio con una visione molto chiara: realizzare esperienze digitali che parlano da sole. Lavoriamo con brand ambiziosi che vogliono crescere, distinguersi e costruire valore.</h2>
-                    <p class="about__body">Combiniamo ricerca, design e ingegneria per togliere attrito ai percorsi digitali. Ogni dettaglio è calibrato per far emergere il brand e aumentare la conversione.</p>
-                </div>
-                <div class="about__card reveal">
-                    <div class="about__media">
-                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80&sat=-10" loading="lazy" alt="Studio creativo">
+                    <h2>Progettiamo asset che fanno crescere il tuo brand.</h2>
+                    <p>Tagliamo il rumore. Mettiamo ordine in brand, prodotto, funnel e contenuti. Diamo guidazione chiara dall'audit al rilascio.</p>
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <span class="stat-number">+68</span>
+                            <span class="stat-label">progetti completati</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">4.9/5</span>
+                            <span class="stat-label">valutazione media</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">2x-3x</span>
+                            <span class="stat-label">rilascio piu rapido</span>
+                        </div>
                     </div>
-                    <div class="about__metrics">
-                        <div class="metric">
-                            <div class="stat" data-count="60">0</div>
-                            <p>Progetti completati</p>
-                        </div>
-                        <div class="metric">
-                            <div class="stat" data-count="20">0</div>
-                            <p>Brand supportati</p>
-                        </div>
-                        <div class="metric">
-                            <div class="stat" data-count="5">0</div>
-                            <p>Anni di esperienza</p>
+                </div>
+                <div class="about__visual reveal">
+                    <div class="visual__frame">
+                        <div class="visual__glow"></div>
+                        <div class="visual__content">
+                            <span class="tag">Strategia operativa</span>
+                            <h3>Decisioni veloci, implementazioni pulite.</h3>
+                            <p>Framework chiari, componenti riutilizzabili, contenuti pronti per crescere.</p>
+                            <div class="pill-group">
+                                <span class="pill">Brand Kit</span>
+                                <span class="pill">UX Strategy</span>
+                                <span class="pill">Content ops</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section contact" id="contact">
-            <div class="container contact__inner reveal">
-                <div class="contact__bg"></div>
-                <div>
-                    <p class="eyebrow">Parliamone</p>
-                    <h2 data-split>Costruiamo qualcosa che merita attenzione.</h2>
-                    <p>Parlaci della tua idea: ti aiutiamo a trasformarla in realtà.</p>
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Servizi core</p>
+                    <h2>Brand, siti Web e sistemi costruiti per scalare.</h2>
                 </div>
-                <div class="contact__actions">
-                    <a href="mailto:info@netelevate.xyz?subject=Nuovo%20progetto" class="btn btn--solid">Inizia il tuo progetto</a>
-                    <a href="#top" class="contact__back">Torna su ↗</a>
+                <div class="services__grid">
+                    <article class="service-card reveal">
+                        <div class="service__meta">
+                            <span class="badge">01</span>
+                            <span class="chip chip--outline">Brand System</span>
+                        </div>
+                        <h3>Branding & Identita</h3>
+                        <p>Posizionamento, messaggi guida, palette, tipografia, layout system. Tutto cio che serve per essere riconoscibili.</p>
+                        <div class="service__footer">
+                            <span class="line">Linee guida complete</span>
+                            <span class="line">Copy istituzionale</span>
+                        </div>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="service__meta">
+                            <span class="badge">02</span>
+                            <span class="chip chip--outline">Product & Web</span>
+                        </div>
+                        <h3>Siti Web & UX Design</h3>
+                        <p>Siti rapidi, chiari, misurabili. Architettura, prototipi, componenti modulari e Webflow di livello professionale.</p>
+                        <div class="service__footer">
+                            <span class="line">SEO ready</span>
+                            <span class="line">Performance ottimizzate</span>
+                        </div>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="service__meta">
+                            <span class="badge">03</span>
+                            <span class="chip chip--outline">AI & Automation</span>
+                        </div>
+                        <h3>Automazione & AI Workflow</h3>
+                        <p>Automazioni per contenuti, funnel, CRM e assistenti AI su misura per il tuo team.</p>
+                        <div class="service__footer">
+                            <span class="line">Data layer</span>
+                            <span class="line">Operations automatizzate</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process" id="process">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Processo</p>
+                    <h2>Semplice, veloce, replicabile.</h2>
+                </div>
+                <div class="process__grid">
+                    <div class="process__card reveal">
+                        <span class="process__step">01</span>
+                        <h3>Analisi rapida</h3>
+                        <p>Audit di brand, sito, contenuti e obiettivi.</p>
+                    </div>
+                    <div class="process__card reveal">
+                        <span class="process__step">02</span>
+                        <h3>Prototipo operativo</h3>
+                        <p>Layout, copy e struttura approvati in poche ore.</p>
+                    </div>
+                    <div class="process__card reveal">
+                        <span class="process__step">03</span>
+                        <h3>Rilascio completo</h3>
+                        <p>Sito online, automazioni attive e materiali finali.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Progetti</p>
+                    <h2>Alcuni lavori recenti.</h2>
+                </div>
+                <div class="gallery__grid">
+                    <figure class="gallery__item reveal">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="Creative lab futuristico" loading="lazy">
+                        <figcaption>Redesign completo per SaaS AI</figcaption>
+                    </figure>
+                    <figure class="gallery__item reveal">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80" alt="Luci verdi futuristiche" loading="lazy">
+                        <figcaption>Nuovo sito per studio creativo</figcaption>
+                    </figure>
+                    <figure class="gallery__item reveal">
+                        <img src="https://images.unsplash.com/photo-1522199873715-1e893a0173e6?auto=format&fit=crop&w=1600&q=80" alt="Workspace premium" loading="lazy">
+                        <figcaption>Sistema UX per piattaforma educational</figcaption>
+                    </figure>
+                    <figure class="gallery__item reveal">
+                        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1600&q=80" alt="Architettura luminosa" loading="lazy">
+                        <figcaption>Brand kit per startup tech</figcaption>
+                    </figure>
+                    <figure class="gallery__item reveal">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80" alt="Coding interface" loading="lazy">
+                        <figcaption>Dashboard marketing su misura</figcaption>
+                    </figure>
+                    <figure class="gallery__item reveal">
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d4982c93dc?auto=format&fit=crop&w=1600&q=80" alt="Neon creative space" loading="lazy">
+                        <figcaption>Rebranding per agenzia servizi</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Proof</p>
+                    <h2>Fondatori che hanno lavorato con noi.</h2>
+                </div>
+                <div class="slider">
+                    <button class="slider__control slider__control--prev" aria-label="Recensione precedente">&lsaquo;</button>
+                    <div class="slider__viewport">
+                        <div class="slide is-active">
+                            <div class="slide__quote">"Brand e sito rifatti in 4 settimane. Funnel +32%."</div>
+                            <div class="slide__meta">
+                                <strong>Marta R.</strong>
+                                <span>Founder SaaS</span>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__quote">"Processo chiaro, prototipi veloci e rilasci impeccabili."</div>
+                            <div class="slide__meta">
+                                <strong>Andrea T.</strong>
+                                <span>CEO EdTech</span>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__quote">"Handoff pulito, documentazione precisa. Team operativo subito."</div>
+                            <div class="slide__meta">
+                                <strong>Luca S.</strong>
+                                <span>Product Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider__control slider__control--next" aria-label="Recensione successiva">&rsaquo;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta" id="cta">
+            <div class="container cta__inner">
+                <div class="cta__glow"></div>
+                <p class="eyebrow reveal">Next Step</p>
+                <h2 class="reveal">Parliamo del tuo progetto.</h2>
+                <p class="cta__copy reveal">Call strategica, roadmap, primi insight utili. Senza impegno.</p>
+                <div class="cta__actions reveal">
+                    <a href="mailto:info@netelevate.xyz?subject=Brief%20Nuovo%20Progetto" class="btn btn--primary">Richiedi un preventivo</a>
+                    <a href="#top" class="btn btn--ghost">Torna su</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer__inner">
-            <span class="footer__logo">NetElevate</span>
-            <div class="footer__links">
-                <a href="#services">Servizi</a>
-                <a href="#portfolio">Lavori</a>
-                <a href="#contact">Contatti</a>
+        <div class="container footer__grid">
+            <div>
+                <div class="footer__logo">NetElevate</div>
+                <p class="footer__tagline">Design strategico, tecnologia precisa, impatto misurabile.</p>
             </div>
-            <div class="footer__links">
-                <a href="#" aria-label="Instagram">IG</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="X">X</a>
+            <div class="footer__columns">
+                <div>
+                    <p class="footer__label">Navigazione</p>
+                    <a href="#services">Servizi</a>
+                    <a href="#about">Studio</a>
+                    <a href="#process">Processo</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reviews">Proof</a>
+                </div>
+                <div>
+                    <p class="footer__label">Contatti</p>
+                    <a href="mailto:info@netelevate.xyz">info@netelevate.xyz</a>
+                    <a href="tel:+393806973732">+39 380 697 3732</a>
+                    <span>Viale Europa 79 - Terracina (LT)</span>
+                </div>
             </div>
         </div>
-        <div class="footer__line"></div>
-        <div class="container footer__meta">
-            <small>© 2025 NetElevate — Design mirato, risultati misurabili.</small>
-        </div>
-        <div class="container footer__legal" style="margin-top:14px;color:#a6b0c2;font-size:12px;line-height:1.6;text-align:center;font-style:normal;">
-            <div>NetElevate &mdash; Impresa Individuale</div>
-            <div>Viale Europa 79, 04019 Terracina (LT)</div>
-            <div>Email: <a href="mailto:palombimattia326@gmail.com" style="color:inherit;">palombimattia326@gmail.com</a></div>
-            <div>Telefono: <a href="tel:+393806973732" style="color:inherit;">+39 380 697 3732</a></div>
+        <div class="footer__bottom">
+            <span>© 2025 NetElevate - Executive Digital Agency</span>
+            <div class="footer__social">
+                <a href="#" aria-label="LinkedIn">Ln</a>
+                <a href="#" aria-label="Instagram">Ig</a>
+                <a href="#" aria-label="Behance">Be</a>
+            </div>
         </div>
     </footer>
 
-    <script src="assets/js/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
